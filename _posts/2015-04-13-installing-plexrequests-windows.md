@@ -7,7 +7,7 @@ date: 2015-04-13
 <p class="intro"><span class="dropcap">F</span>or those currently using Windows for running <a href="http://plexrequests.8bits.ca">Plex Requests</a> it can seem a bit intimidating to get things up and running, not to mention updating to new versions! I hope to give a quick rundown on how to do things using <a href="http://git-scm.com/">Git</a>which allows you the update and switch branches the easiest.</p>
 
 ###Installation
-The only requirement is Git which you can download and install from [here](http://git-scm.com/downloads) . The standard installation options should suffice as we're going to be using the GUI component that is installed. I was going to use the `bash` script but it seems you can't copy or paste into it which seems silly.
+The only requirement is Git which you can download and install from [here](http://git-scm.com/downloads). The standard installation options should suffice as we're going to be using the GUI component that is installed. I was going to use the `bash` script but it seems you can't copy or paste into it which seems silly.
 
 Once the installation is complete, open up `Git GUI` from your start menu. From the options listed, select `Clone Existing Repository`. For the source enter the clone URL for the project, `https://github.com/lokenx/plexrequests-meteor.git`. For the target location, choose the folder you would like to install Plex Requests into, from here on out we'll be using `C:\plexrequests`. Then press Clone to start the download process.
 
