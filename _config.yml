@@ -1,0 +1,18 @@
+name: Ramblings &amp; Musings
+description: 
+
+url: http://8bits.ca
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: redcarpet
+highlighter: pygments
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact

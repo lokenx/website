@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ramblings &amp;amp; Musings - Articles</title>
+		<description></description>
+		<link>http://8bits.ca</link>
+		<atom:link href="http://8bits.ca/feed.articles.xml" rel="self" type="application/rss+xml" />
+		
+			
+			<item>
+				<title>Trello</title>
+				
+					<description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;n the world of productivity apps one could very easily spend more time switching between options than actually using one and getting stuff done. I&#39;ve fallen prey to this more often that I would probably care to admit. I have tried all the major to-do applications, tasks list, Getting Things Done tools and everything in between. Yet every time I hit a block in the road and switch to something else, or even worse struggle along and get frustrated at myself and the tool. That all came to an end about a week ago, when I opened up &lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt; and gave it a try.&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 09 Apr 2015 00:00:00 -0400</pubDate>
+				<link>http://8bits.ca/blog/trello/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/trello/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Samsung Galaxy S6 Review</title>
+				
+					<description>&lt;p&gt;&lt;a href=&quot;http://www.theverge.com/2015/3/31/8317743/samsung-galaxy-s6-edge-review&quot;&gt;Dieter Bohn  from The Verge&lt;/a&gt;:&lt;/p&gt;
+</description>
+				
+				<pubDate>Tue, 07 Apr 2015 00:00:00 -0400</pubDate>
+				<link>http://8bits.ca/blog/samsung-s6-review/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/samsung-s6-review/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Abundance of Web Frameworks</title>
+				
+					<description>As someone who has only recently got into web development, the amount of different web technologies to know is absolutely crazy! Besides, knowing the basics of HTML, CSS, and JavaScript there&#39;s Ruby, Python, various C&#39;s, and within each language a multitude of frameworks. Having some Python knowledge I looked at the frameworks available&amp;#58; Django, Pyramid, Flask, web2py, Turbo Gears to name just a few!</description>
+				
+				<pubDate>Wed, 18 Mar 2015 00:00:00 -0400</pubDate>
+				<link>http://8bits.ca/blog/abundance-of-web-frameworks/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/abundance-of-web-frameworks/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Plex Requests</title>
+				
+					<description>&lt;p&gt;&lt;img src=&quot;http://8bits.ca/assets/img/plexrequests.png&quot; alt=&quot;plex requests&quot;&gt;
+&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;A&lt;/span&gt;s I&amp;#39;m sure many geeky data hoarders out there know, &lt;a href=&quot;https://plex.tv&quot;&gt;Plex&lt;/a&gt; is arguably one of the greatest tools to easily and reliably stream your media collection. Be it on your HTPC, your power house desktop, or your mobile phone on the go, it&amp;#39;s easy to watch your movies and TV shows. With recent updates it&amp;#39;s also just as easy to give close friends and family access to our ever expanding libraries. I know people who use my Plex are avid watchers of everything from the main stream content to quirky indie movies. As the individual hosting the main Plex Media Server the greatest annoyance however is the constant barrage of requests for specific content. Be it a new movie, a failed 1 season TV show, or just an old classic I don&amp;#39;t have, the texts and emails never seem to end. This is where Plex Requests comes in.&lt;/p&gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Wed, 11 Mar 2015 00:00:00 -0400</pubDate>
+				<link>http://8bits.ca/blog/plex-requests/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/plex-requests/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Part 3.1: XenServer Installation</title>
+				
+					<description>&lt;p&gt;&lt;img src=&quot;http://8bits.ca/assets/img/Xenserver_Installation.jpg&quot; alt=&quot;xenserver installation&quot;&gt;
+&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;nstalling XenServer 6.5 was relatively straight-forward, both on bare metal as well as in a virtual machine. Anyone familiar with installing a Linux distro or other hypervisor should be relatively comfortable using the graphical installer. It takes you through typically steps such as setting a root password, networking information, as well as the option to install any supplement packages. After you&amp;#39;ve completed the installation your machine should reboot into XenServer. On all hardware I tested installation took less than 10 minutes and first boot was under 60 seconds on an SSD which is nice and quick.&lt;/p&gt;&lt;/p&gt;
+</description>
+				
+				<pubDate>Sun, 15 Feb 2015 00:00:00 -0500</pubDate>
+				<link>http://8bits.ca/blog/part-3-1-xenserver/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/part-3-1-xenserver/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Part 2&amp;#58; Laying the Virtual Groundwork</title>
+				
+					<description>As mentioned in Part 1 I&#39;m hoping to go through and test out the various hypervisors that are currently on the market. To give them all a fair playing field I&#39;ve set aside a machine for this purpose. Currently I only have one so I will be limited in testing certain features but there is a hope to have two identical machines soon to test out things such as High Availability and Clusters.</description>
+				
+				<pubDate>Sun, 25 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://8bits.ca/blog/part-2-laying-the-virtual-groundwork/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/part-2-laying-the-virtual-groundwork/</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Part 1&amp;#58; It&#39;s a Virtual World</title>
+				
+					<description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;he landscape of virtualization products is extremely diverse. From the heavy hitters like VMware and Microsoft to the up and coming solutions such as Docker and LXD.  It&#39;s easy to see how this industry has taken off with our ever growing need for more. I think it&#39;s a great time to be interested in virtualization and because nearly all implementations have a free (as in beer) option to try out its super easy to dive in head first. And diving in head first is what I intend to do!&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 17 Jan 2015 00:00:00 -0500</pubDate>
+				<link>http://8bits.ca/blog/part-1-its-a-virtual-world/</link>
+				<guid isPermaLink="true">http://8bits.ca/blog/part-1-its-a-virtual-world/</guid>
+			</item>
+			
+		
+	</channel>
+</rss>
