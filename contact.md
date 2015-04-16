@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Contact Long Haul
+title: Contact
+permalink: /contact/
 ---
 
 <div id="contact">
@@ -17,7 +18,7 @@ title: Contact Long Haul
     <input type="email" id="email" name="_replyto" class="full-width"><br>
     <label for="message">Message</label>
     <textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea><br>
-    <input type="hidden" name="_next" value="{{ site.url }}/thankyou" />
+    <input type="hidden" name="_next" value="/thankyou" />
     <input type="submit" value="Send" class="button">
   </form>
 </div>
