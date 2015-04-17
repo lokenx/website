@@ -9,7 +9,9 @@ date: 2015-04-13
 ###Installation
 The only requirement is Git which you can download and install from [here](http://git-scm.com/downloads). The standard installation options should suffice as we're going to be using the GUI component that is installed. I was going to use the `bash` version but it seems you can't copy or paste into it which is silly.
 
-Once the installation is complete, open up `Git GUI` from your start menu. From the options listed, select `Clone Existing Repository`. For the source enter the clone URL for the project, `https://github.com/lokenx/plexrequests-meteor.git`. For the target location, choose the folder you would like to install Plex Requests into, from here on out we'll be using `C:\plexrequests`. Then press Clone to start the download process.
+**EDIT:** I somehow missed an important step in the installation process: actually installing Meteor! If you don't already have Meteor installed, head over to [https://www.meteor.com/install](https://www.meteor.com/install) to get the Windows installer. Download and then run the installer. Once that's complete Meteor should be installed and ready to go! To confirm, open up a command prompt, and type `meteor --version`.
+
+Once the installation is complete of Git and Meteor, open up `Git GUI` from your start menu. From the options listed, select `Clone Existing Repository`. For the source enter the clone URL for the project, `https://github.com/lokenx/plexrequests-meteor.git`. For the target location, choose the folder you would like to install Plex Requests into, from here on out we'll be using `C:\plexrequests`. Then press Clone to start the download process.
 
 You should now have the folder you specified with the project files downloaded into. You can open up your command prompt, navigate to the folder, and run `meteor` to get Plex Requests running locally at `http://locahost:3000/`. Your database is saved in `C:\plexrequests\.meteor\local` if you want to make backup copies of it. You can also safely close the `Git GUI` application as it's not needed to be open all the time.
 
