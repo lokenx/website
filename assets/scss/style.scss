@@ -29,11 +29,13 @@
 @media only screen and (min-width: 800px) { @import "breakpoints/800up";} 
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
-
+html {
+	overflow-y: scroll; 
+}
 code {
     background-color: #2c3e50;
-    border: 3px solid #2c3e50;
-    border-radius: 3px;
-    padding: 2px 5px;
+    border: 2px solid #2c3e50;
+    border-radius: 2px;
+    padding: 2px 4px;
     color: #ecf0f1;
 }
