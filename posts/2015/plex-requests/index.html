@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Plex Requests</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="post-background-nav">
+    <div class="post-nav">
+      <div class="pull-left">
+        <a class="button button-primary" href="/posts/2015/abundance-of-web-frameworks">&laquo; Previous</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post">
+      <main>
+        <h2>Plex Requests</h2>
+
+        <div class="published-date">10 March 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/meteor.html">meteor</a></div>
+
+        <p>As I’m sure many geeky data hoarders out there know, <a href="plex.tv">Plex</a> is arguably one of the greatest tools to easily and reliably stream your media collection. Be it on your HTPC, your power house desktop, or your mobile phone on the go, it’s easy to watch your movies and TV shows. With recent updates it’s also just as easy to give close friends and family access to our ever expanding libraries. I know people who use my Plex are avid watchers of everything from the main stream content to quirky indie movies. As the individual hosting the main Plex Media Server the greatest annoyance however is the constant barrage of requests for specific content. Be it a new movie, a failed 1 season TV show, or just an old classic I don’t have, the texts and emails never seem to end. This is where Plex Requests comes in.</p>
+<p><img src="/assets/img/plexrequests.png" alt="plex requests"></p>
+<p>Plex Requests is my first attempt at actual web development and the application is in it’s infancy but the idea is simple: provide an easy to use web application where people can go and search for content and put a request in for it. Those requests can then get automatically processed by content downloaders as well as send notifications to you with the request. This way requests come in and they automatically get searched for without any intervention on my part. My family can request all the Christmas movies they want and I don’t have to lift a finger!</p>
+<p>The main version of the app is currently written in Django/Python and provides some of the basic functionality with integration for <a href="https://couchpota.to/">Couch Potato</a> and <a href="https://www.pushbullet.com/">PushBullet</a>. I have also created a simpler version of it written entirely in JavaScript. This simple one page application does not tie into Couch Potato or your current media collection but merely forwards requests on to your PushBullet account. It’s much easier to host as it is a single HTML document with a CSS file for styling. I’ve a demo of it running on <a href="http://8bits.ca/plexrequests-js/">GitHub Pages</a> to show how simple it is to host.</p>
+<p>While Plex Requests is very much a 0.1 alpha, it shouldn’t be too hard to get up and running inside a Django project. I’ve plans to modulate it properly as well as add additional services for other content and properly clean up the code. All the details for it can be found at the various links below!</p>
+<p><a href="https://github.com/lokenx/plexrequests">Plex Requests GitHub Repo</a><br><a href="https://github.com/lokenx/plexrequests-js">Plex Requests JavaScript GitHub Repo</a><br><a href="http://8bits.ca/plexrequests-js/">Sample Plex Requests Site</a></p>
+<hr>
+<p><strong>Legal disclaimer:</strong> Plex Requests is in no way associated with Plex Inc., and I take no responsibility for what individuals do with it.</p>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//ramblingsmusings.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

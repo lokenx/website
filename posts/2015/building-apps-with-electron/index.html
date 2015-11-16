@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Building Apps with Electron</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="post-background-nav">
+    <div class="post-nav">
+
+      <div class="pull-right">
+        <a class="button button-primary" href="/posts/2015/stop-hacking-your-life">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post">
+      <main>
+        <h2>Building Apps with Electron</h2>
+
+        <div class="published-date">12 November 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/development.html">development</a></div>
+
+        <p>Taking a break from working with Meteor, I decided to give <a href="http://electron.atom.io/">Electron</a> a try. Electron is a framework for building desktop applications using HTML, CSS, and Javascript. It powers both the <a href="https://atom.io/">Atom</a> text editor, and the popular chat service <a href="https://slack.com/">Slack</a>.</p>
+<p>For testing I thought I’d work on something super simple; a pomodoro timer! Refer to this <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">wiki</a> article if you’re unfamilar with the productivity technique. I was going to build a simple countdown timer that would notify you once completed. Typically, you also have options for different lengths of breaks, but I was trying to keep things simple so just stuck with the default 25 minutes timer.</p>
+<p><img src="/assets/img/tiny_pomodoro.png" alt="Tiny Pomodoro"></p>
+<p>You can see the completed app above. I originally had a prgoress bar (straight line and a circular one) but settled on making use of <a href="http://flipclockjs.com/">FlipClock.js</a> because why not? Plus it saved some time doing something fro scratch!</p>
+<p>While creating the app and testing it things went smooth. The documentation isn’t bad, just lacking examples in certain areas. Plus you have to get used to the two process, main and rendered as communicating between them requires some forethought.</p>
+<p>Besides a few nuances such as loading JS libraries, things are pretty standard affair.</p>
+<pre><code>$ = window.jQuery = require(&#39;jquery&#39;);
+</code></pre><p>The only issue arouse when it came to packaging. Now if I had used one of the more thorough boilerplates it may have been easier, but the listed way seems silly. You download the default Electron.app binary. You then move your app into a <code>Electron.app/Contents/Resources/app</code> folder inside the existing app. After changing some config files so that the app name and such is corrrect, you can now run it using Electron.app or whatever you changed it to. This .app is now your finished app and can be distributed and such.</p>
+<p>The above process seems somewhat silly, even though it did work. There has to be a better way than messing with config files inside a pre-existing app. The biggest take away though, I think next time I may just try and do things natively. XCode is pretty great and the experience would most likely be more enjoyable all around.</p>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//ramblingsmusings.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

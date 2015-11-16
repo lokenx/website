@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Installing Plex Requests on Windows</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="post-background-nav">
+    <div class="post-nav">
+      <div class="pull-left">
+        <a class="button button-primary" href="/posts/2015/stop-hacking-your-life">&laquo; Previous</a>
+      </div>
+
+      <div class="pull-right">
+        <a class="button button-primary" href="/posts/2015/trello">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post">
+      <main>
+        <h2>Installing Plex Requests on Windows</h2>
+
+        <div class="published-date">12 April 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/guide.html">guide</a></div>
+
+        <p class="intro"><span class="dropcap">F</span>or those currently using Windows for running <a href="http://plexrequests.8bits.ca">Plex Requests</a> it can seem a bit intimidating to get things up and running, not to mention updating to new versions! I hope to give a quick rundown on how to do things using <a href="http://git-scm.com/">Git</a> which allows you to update and switch branches the easiest.</p>
+
+<h3 id="installation">Installation</h3>
+<p>The only requirement is Git which you can download and install from <a href="http://git-scm.com/downloads">here</a>. The standard installation options should suffice as we’re going to be using the GUI component that is installed. I was going to use the <code>bash</code> version but it seems you can’t copy or paste into it which is silly.</p>
+<p><strong>EDIT:</strong> I somehow missed an important step in the installation process: actually installing Meteor! If you don’t already have Meteor installed, head over to <a href="https://www.meteor.com/install">https://www.meteor.com/install</a> to get the Windows installer. Download and then run the installer. Once that’s complete Meteor should be installed and ready to go! To confirm, open up a command prompt, and type <code>meteor --version</code>.</p>
+<p>Once the installation is complete of Git and Meteor, open up <code>Git GUI</code> from your start menu. From the options listed, select <code>Clone Existing Repository</code>. For the source enter the clone URL for the project, <code>https://github.com/lokenx/plexrequests-meteor.git</code>. For the target location, choose the folder you would like to install Plex Requests into, from here on out we’ll be using <code>C:\plexrequests</code>. Then press Clone to start the download process.</p>
+<p>You should now have the folder you specified with the project files downloaded into. You can open up your command prompt, navigate to the folder, and run <code>meteor</code> to get Plex Requests running locally at <code>http://locahost:3000/</code>. Your database is saved in <code>C:\plexrequests\.meteor\local</code> if you want to make backup copies of it. You can also safely close the <code>Git GUI</code> application as it’s not needed to be open all the time.</p>
+<h3 id="updating">Updating</h3>
+<p>When a new version comes out, a bug release is pushed, or you just want to update to the latest copy it’s super simple. Stop the <code>meteor</code> process from the command line with <code>ctrl + c</code>. Open up <code>Git GUI</code> and from the main screen you should see the repository we made earlier. If not, select <code>Open Existing Repository</code> and point it towards the folder where Plex Requests is installed. In the new window select the <code>Remote</code> menu, highlight the <code>Fetch</code> option and select <code>origin</code>. A new window should open that shows you the progress and status of any updates that have been applied, and once complete show <code>Success</code>. If that’s the case you’re all done, Plex Requests is now updated to the latest version!</p>
+<h3 id="switching-to-dev">Switching to dev</h3>
+<p>If you feel adventurous, or want to try out some new feature that’s currently under development you can easily switch to the dev branch. Using <code>Git GUI</code> open up your current repository as we did earlier. Select the <code>Branch</code> menu and then select <code>Create</code>. In the new window choose <code>Match Tracking Branch Name</code> at the top. In the next section select the branch you want to switch to, be it <code>dev</code> or <code>master</code> (if you want to switch back to the main releases). After a few moments the window should close and the main Git screen should say <code>Checked out</code> whichever repository you selected in the lower left. You’re now running on the latest release of the branch you selected.</p>
+<p>Hopefully you now have Plex Requests up and running on your machine locally, as well as have the ability to easily update it as new versions get released. If you’re still having issues please visit the <a href="http://plexrequests.8bits.ca/">Plex Requests site</a>, open a <a href="https://github.com/">GitHub issue</a>, or post on the <a href="https://forums.plex.tv/index.php/topic/151899-plex-movie-requests/">Plex Forums</a>.</p>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//ramblingsmusings.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

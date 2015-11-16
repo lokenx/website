@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Abundance of Web Frameworks</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="post-background-nav">
+    <div class="post-nav">
+      <div class="pull-left">
+        <a class="button button-primary" href="/posts/2015/samsung-galaxy-s6-review">&laquo; Previous</a>
+      </div>
+
+      <div class="pull-right">
+        <a class="button button-primary" href="/posts/2015/plex-requests">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post">
+      <main>
+        <h2>Abundance of Web Frameworks</h2>
+
+        <div class="published-date">17 March 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/development.html">development</a></div>
+
+        <p class="intro"><span class="dropcap">A</span>s someone who has only recently got into web development, the amount of different web technologies to know is absolutely crazy! Besides, knowing the basics of HTML, CSS, and JavaScript there’s Ruby, Python, various C’s, and within each language a multitude of frameworks. Having some Python knowledge I looked at the frameworks available: Django, Pyramid, Flask, web2py, Turbo Gears to name just a few! Viewing the wiki page for Python web frameworks just makes you dizzy, and that’s just for one language. In someways it makes starting really hard: what framework do I chose, does it matter, which one provides a better career path, what’s current and modern? Before a single line of code is written you could read hours upon hours of comparisons between the frameworks and which one is best.</p>
+
+<p>For me, the reading of what framework to use finally stopped once I got to <a href="https://www.djangoproject.com">Django</a>, and more specifically their tutorial and documentation. It was clear and concise and it was a name that came up a lot around the web. However, I could have just as easily gone down the micro-framework path of Flask, or the middle of the road Pyramid just as easily. For any one trying to start I would suggest picking the top three frameworks, and rolling a dice! (I’m only slightly kidding…)</p>
+<p>Things do get much better once you get working with a framework and try to build something. You’ll get to understand the features you like and want, versus the ones you don’t use. You’ll also be able to better judge other frameworks within a different language as well, even if you don’t know the underlying language. Personally I’ve re-written <a href="{% post_url 2015-03-11-plex-requests %}">Plex Requests</a> from <a href="https://github.com/lokenx/plexrequests">Django/Python</a> to <a href="https://github.com/lokenx/plexrequests-meteor">Meteor/JavaScript</a> for no real reason other than I wanted to try a new framework. Once I got started on it though I instantly saw the differences between the frameworks as well as the use cases for them. Meteor has allowed me to very quickly get out a working, dynamic, single page web application version which I would not have been able to do in Django. It’s also shown me some of the benefits of using Django and it’s more structure approached. I like both frameworks, but they definitely fill very different roles in the web application world.</p>
+<p>For anyone starting out, all I can say is pick one and try to build something with it! Start on the tutorials but there’s no need to finish them. If you start to get a feel for how things work, get started on what you want to build. I still reference the tutorials and documentation in places where my I’m unsure, but after awhile following along the whole tutorial wasn’t really gaining me much. It’s better to take the training wheels off as soon as possible, you learn quick when you’re about to fall!</p>
+<p>Check out the Django “<a href="https://docs.djangoproject.com/en/1.7/intro/tutorial01/">Write your first Django app</a>“ and Meteor’s <a href="https://www.meteor.com/try">Tutorial</a> guides!</p>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//ramblingsmusings.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="page-container">
+    <div class="page">
+      <main>
+        <h2>Contact</h2>
+
+        <p>Need to get a hold of me for something? Use the form to the right with any questions, comments, or requests you may have for me. Your email will not be used for anything but responding to you, I hate spam just as much as you!</p>
+<form action="http://formspree.io/mikhail@delport.ca" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="_replyto">
+
+  <label for="message">Message</label>
+  <textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea>
+
+  <input type="hidden" name="_next" value="/pages/thankyou/">
+
+  <input type="submit" value="Send" class="button">
+</form>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

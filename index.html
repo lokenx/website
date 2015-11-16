@@ -1,26 +1,113 @@
----
-layout: default
-title: Ramblings &amp; Musings
----
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ramblings and Musings</title>
 
-      <div id="home">
-        <h1 class="pageTitle">Recent Posts</h1>
-        <ul class="posts noList">
-          {% for post in paginator.posts %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+  <div class="grid-left-half">
+    <header>
+      <div class="title-text">
+        <h1>Ramblings and Musings</h1>
+        <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+    
+    
+        <ul>
             <li>
-            	<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-            	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+              <a href="pages/2015/projects">Projects</a>
             </li>
-          {% endfor %}
+            <li>
+              <a href="pages/2015/contact">Contact</a>
+            </li>
         </ul>
-        <!-- Pagination links -->
-        <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>  
-          {% endif %} 
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
-          {% endif %}
-        </div>
       </div>
+    
+      <div class="cover"></div>
+    
+    </header>
+  </div>
+
+  <div class="grid-right-half">
+    <div class="posts-list">
+        <div class="post-item u-cf">
+          <div class="post-meta">November 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/development.html">development</a></div>
+          <h2><a href="posts/2015/building-apps-with-electron">Building Apps with Electron</a></h2>
+          <div class="post-excerpt">
+            Taking a break from working with Meteor, I decided to give Electron a try. Electron is a framework for building desktop applications using HTML, CSS…
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/building-apps-with-electron">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">June 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/link.html">link</a></div>
+          <h2><a href="posts/2015/stop-hacking-your-life">Stop Hacking Your Life</a></h2>
+          <div class="post-excerpt">
+            Kyle Eschenroeder writing for The Art of Manliness
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/stop-hacking-your-life">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">April 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/guide.html">guide</a></div>
+          <h2><a href="posts/2015/installing-plex-requests-on-windows">Installing Plex Requests on Windows</a></h2>
+          <div class="post-excerpt">
+            For those currently using Windows for running Plex Requests it can seem a bit intimidating to get things up and running, not to mention updating to…
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/installing-plex-requests-on-windows">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">April 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/productivity.html">productivity</a></div>
+          <h2><a href="posts/2015/trello">Trello</a></h2>
+          <div class="post-excerpt">
+            In the world of productivity apps one could very easily spend more time switching between options than actually using one and getting stuff done. I’ve…
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/trello">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">April 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/link.html">link</a></div>
+          <h2><a href="posts/2015/samsung-galaxy-s6-review">Samsung Galaxy S6 Review</a></h2>
+          <div class="post-excerpt">
+            Dieter Bohn  from The Verge:
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/samsung-galaxy-s6-review">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">March 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/development.html">development</a></div>
+          <h2><a href="posts/2015/abundance-of-web-frameworks">Abundance of Web Frameworks</a></h2>
+          <div class="post-excerpt">
+            As someone who has only recently got into web development, the amount of different web technologies to know is absolutely crazy! Besides, knowing the…
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/abundance-of-web-frameworks">Read</a>
+          </div>
+        </div>
+        <div class="post-item u-cf">
+          <div class="post-meta">March 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/meteor.html">meteor</a></div>
+          <h2><a href="posts/2015/plex-requests">Plex Requests</a></h2>
+          <div class="post-excerpt">
+            As I’m sure many geeky data hoarders out there know, Plex is arguably one of the greatest tools to easily and reliably stream your media collection…
+          </div>
+          <div class="post-read-more">
+            <a class="" href="posts/2015/plex-requests">Read</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>
