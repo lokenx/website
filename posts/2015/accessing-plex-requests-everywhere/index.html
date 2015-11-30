@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Accessing Plex Requests Everywhere</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
+<body class="grid-full">
+
+  <div class="post-background-nav">
+    <div class="post-nav">
+
+      <div class="pull-right">
+        <a class="button button-primary" href="/posts/2015/building-apps-with-electron">Next &raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-container">
+    <div class="post">
+      <main>
+        <h2>Accessing Plex Requests Everywhere</h2>
+
+        <div class="published-date">28 November 2015 &nbsp; • &nbsp; <a class="tag" href="/tag/guide.html">guide</a></div>
+
+        <p>Plex Requests is great, but being able to use it remotely would be even better! There are a few different ways to go about this. For this post we will be keeping things super simple. A more complex one will following using a reverse proxy server.</p>
+<p>The first step is to get Plex Requests itself up and running. Refer to the <a href="http://plexrequests.8bits.ca/">website</a> for help with this. Windows users can refer to <a href="http://8bits.ca/posts/2015/installing-plex-requests-on-windows/">this</a> previous blog post. Once it’s going you should be able to access it locally at <code>http://localhost:3000</code>. Any other computer that is on the same network should also be able to connect to it using the machine’s IP address instead of <code>localhost</code>. If this is not the case you may have to go into your Firewall settings and open port 3000. Google is your friend if you are having trouble opening the port.</p>
+<p>Next, is to get DynamicDNS setup. What this will allow is to map a URL to your external IP. There are plenty of free services available that you can use, including <a href="http://www.noip.com/free">NoIP</a>. Setup will depend on the provider, but the end result is that resolving your DynamicDNS URL should end up with your public IP address. If you’re lucky you can set it to use port 80, but some ISPs will limit the use of port 80.</p>
+<p>Lastly, you will need to open your routers firewall to forward connections on either port 80 (or if not allowed, port 3000) to the machine that is running Plex Requests’ IP address. This will allow any requests to your DynamicDNS (or DynamicDNS:3000) to be sent to your machine running Plex Requests. Make sure the internal port is set to 3000, or whatever port Plex Requests is running on.</p>
+<p>The result should follow the below flow:</p>
+<pre><code>http://dynamicdns.domain.com =&gt; public IP =&gt; router =&gt; plex requests
+
+
+# If can&#39;t use port 80
+
+http://dynamicdns.domain.com:3000 =&gt; public IP =&gt; router =&gt; plex requests
+</code></pre><p><br>
+Hopefully this can help get things up and running for external access. More posts will follow explaining other options.</p>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            /*
+            var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//ramblingsmusings.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-background">
+      <div class="return-home">
+        <a href="/">Home</a>
+      </div>
+      <div class="copyright">
+        &copy; 2015
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>
